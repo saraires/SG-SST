@@ -4,16 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Registro">
+    tools:context=".Register">
 
-    <AbsoluteLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="-120dp"
+        tools:layout_editor_absoluteY="51dp">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/NameRg"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="170dp"
+            android:layout_marginEnd="153dp"
+            android:layout_marginBottom="29dp"
+            android:text="Iniciar Sesión" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/UsernameRg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/LastnameRg"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="102dp"
+            android:layout_marginEnd="99dp"
+            android:layout_marginBottom="16dp"
             android:layout_x="100dp"
             android:layout_y="47dp"
             android:ems="10"
@@ -23,9 +45,11 @@
             tools:layout_editor_absoluteY="74dp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/NameRg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/UsernameRg"
+            android:layout_marginTop="-387dp"
             android:layout_x="100dp"
             android:layout_y="105dp"
             android:ems="10"
@@ -35,9 +59,15 @@
             tools:layout_editor_absoluteY="126dp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/LastnameRg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/CCRg"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="103dp"
+            android:layout_marginEnd="98dp"
+            android:layout_marginBottom="10dp"
             android:layout_x="100dp"
             android:layout_y="169dp"
             android:ems="10"
@@ -47,9 +77,15 @@
             tools:layout_editor_absoluteY="185dp" />
 
         <EditText
-            android:id="@+id/editTextNumber"
+            android:id="@+id/CCRg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/PhoneRg"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="104dp"
+            android:layout_marginEnd="96dp"
+            android:layout_marginBottom="12dp"
             android:layout_x="103dp"
             android:layout_y="232dp"
             android:ems="10"
@@ -59,9 +95,15 @@
             tools:layout_editor_absoluteY="242dp" />
 
         <EditText
-            android:id="@+id/editTextPhone"
+            android:id="@+id/PhoneRg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/CellphoneRg"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="104dp"
+            android:layout_marginEnd="97dp"
+            android:layout_marginBottom="9dp"
             android:layout_x="104dp"
             android:layout_y="290dp"
             android:ems="10"
@@ -71,22 +113,34 @@
             tools:layout_editor_absoluteY="318dp" />
 
         <EditText
-            android:id="@+id/editTextNumber2"
+            android:id="@+id/CellphoneRg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/AdressRg"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="103dp"
+            android:layout_marginEnd="98dp"
+            android:layout_marginBottom="12dp"
             android:layout_x="104dp"
             android:layout_y="351dp"
             android:ems="10"
             android:hint="Celular"
-            android:inputType="number"
+            android:inputType="phone"
             tools:layout_editor_absoluteX="101dp"
             tools:layout_editor_absoluteY="397dp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
+            android:id="@+id/AdressRg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_x="106dp"
+            android:layout_above="@+id/PasswordRg"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="104dp"
+            android:layout_marginEnd="97dp"
+            android:layout_marginBottom="15dp"
+            android:layout_x="104dp"
             android:layout_y="416dp"
             android:ems="10"
             android:hint="Dirección"
@@ -95,9 +149,15 @@
             tools:layout_editor_absoluteY="465dp" />
 
         <EditText
-            android:id="@+id/editTextTextPassword2"
+            android:id="@+id/PasswordRg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/RolRg"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="104dp"
+            android:layout_marginEnd="97dp"
+            android:layout_marginBottom="20dp"
             android:layout_x="108dp"
             android:layout_y="476dp"
             android:ems="10"
@@ -107,9 +167,15 @@
             tools:layout_editor_absoluteY="528dp" />
 
         <Button
-            android:id="@+id/rol"
+            android:id="@+id/RolRg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/TermsRg"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="160dp"
+            android:layout_marginEnd="163dp"
+            android:layout_marginBottom="11dp"
             android:layout_x="170dp"
             android:layout_y="534dp"
             android:text="Rol"
@@ -117,9 +183,15 @@
             tools:layout_editor_absoluteY="599dp" />
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/TermsRg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/SendRg"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="97dp"
+            android:layout_marginEnd="89dp"
+            android:layout_marginBottom="17dp"
             android:layout_x="98dp"
             android:layout_y="592dp"
             android:hint="Acepto terminos y condiciones"
@@ -127,16 +199,21 @@
             tools:layout_editor_absoluteY="573dp" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/SendRg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="99dp"
+            android:layout_marginEnd="106dp"
+            android:layout_marginBottom="18dp"
             android:layout_x="154dp"
             android:layout_y="657dp"
             android:text="Finalizar"
             tools:layout_editor_absoluteX="146dp"
             tools:layout_editor_absoluteY="665dp" />
-
-    </AbsoluteLayout>
+    </RelativeLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
